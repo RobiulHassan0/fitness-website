@@ -3,17 +3,21 @@
 
 /* Common Styles  */
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: "Poppins", serif;
 }
 :root{
-    --button-color: #E6533C;
-    --general-font-color: #fff;
-    --background: #222222;
-    --button-font-size: 1.125rem;
     --heading-font-size: 48px;
+    --section-font-size: 3rem;
+    --button-font-size: 1.125rem;
+    --card-title-size: 1.5rem;
+    --card-p-font-size: 1rem;
     --description-font-color: rgba(255, 255, 255, 0.5); 
+    --general-font-color: #fff;
+    --button-color: #E6533C;
+    --main-background: #000;
+    --background: #222222;
 }
 .site-name{
     font-size: 3rem;
@@ -40,11 +44,15 @@
     margin-left: 20px;
 }
 .description{
-    font-size: 1rem;
-    color: #ffffff80;
+    font-size: var(--card-p-font-size);
+    color: var(--description-font-color);
     margin: 30px 0;
 }
-
+.section-title{
+    font-size: var(--section-font-size);
+    color: var(--general-font-color);
+    text-align: center;
+}
 
 
 /* Navigetion Styles  */
@@ -170,6 +178,59 @@ nav ul span{
 #card-two p{
     font-size: 1rem;
 }
+
+/* Main Section  */
+
+main{
+    background: var(--main-background);
+}
+
+.habit-section{
+    display: flex;
+    flex-direction: column;
+    /* width: 70%; */
+    padding: 100px 200px;
+    text-align: center;
+}
+.habit-section > .description{
+    padding: 0 30%;
+    margin-top: 15px;
+}
+.habit-images{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 30px;
+}
+.img-circle{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    /* border: 1px solid #fff; */
+    gap: 5px;
+}
+
+.img-circle img{
+    border-radius: 50%;
+    width: 80%;
+    border: 3px solid var(--description-font-color);
+}
+.habit-title{
+    color: var(--general-font-color);
+    font-size: var(--card-title-size);
+    margin-top: 20px;
+    font-weight: 400;
+}
+.img-circle .description{
+    font-size: var(--card-p-font-size);
+    margin-top: 0;;
+}
+
+
+
+
+
 
 
 
