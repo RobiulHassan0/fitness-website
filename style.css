@@ -231,6 +231,7 @@ nav ul span{
         right: 0;
         top: 9%;
         width: 140px;
+        border-radius: 8px;
     }
     .img-card h1{
         font-size: 1.75rem;
