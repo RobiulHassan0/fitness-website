@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Common Styles  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+:root{
+    --button-color: #E6533C;
+    --general-font-color: #fff;
+    --background: #222222;
+    --button-font-size: 1.125rem;
+    --heading-font-size: 48px;
+    --description-font-color: rgba(255, 255, 255, 0.5); 
+}
+.site-name{
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+    color: var(--button-color);
+}
+.btn-primary{
+    padding: 15px 35px;
+    background: var(--button-color);
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 600;
+    font-size: var(--button-font-size);
+    /* position: relative; */
+}
+.btn-primary .hidden{
+    display: none;
+}
+#btn-secondary{
+    background: none;
+    border: 1px solid #fff;
+    margin-left: 20px;
+}
+.description{
+    font-size: 1rem;
+    color: #ffffff80;
+    margin: 30px 0;
+}
+
+
+
+/* Navigetion Styles  */
+
+header{
+    background: linear-gradient(0deg, #000, #ffffff01, #ffffff02, #111),
+    var(--background);
+    overflow: hidden;
+}
+nav .humburger-icon{
+    display: none;
+    color: #fff;
+    font-size: 25px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0 32px 0;
+    gap: 130px;
+    
+}
+nav ul{
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+}
+ul li{
+    font-size: 1.25rem;
+    font-weight: 400;
+    list-style: none;
+    margin-right: 55px;
+    padding: 12px 0px 12px 3px;
+
+}
+ul li:last-of-type{
+    margin-right: 25px;
+}
+ul li a{
+    text-decoration: none;
+    color: var(--general-font-color);
+}
+nav ul span{
+    padding: 10px 25px;
+    background: var(--button-color);
+    border-radius: 50px;
+}
+
+/* Banner Section Styles */
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 7%;
+    /* gap: 100px;*/
+} 
+
+.banner-content{
+    width: 40%;
+}
+.banner-content h1{
+    font-size: 4.875rem;  
+    color: var(--general-font-color);
+    line-height: 90px;  
+}
+.banner-img {
+    width: 30%;
+    position: relative;
+}
+ 
+.img-card{
+    position: absolute;
+    top: 22%;
+    right: 10%;
+    padding: 18px 25px;
+    display: inline-block;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+.img-card h1{
+    font-size: 2.5rem;
+    color: var(--general-font-color);
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+.img-card p{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#card-two{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    padding: 20px 6px;
+    width: 210px;
+    right: 80%;
+    top: 71%;
+}
+#card-two .circle{
+    background: var(--button-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+#card-two .circle i{
+    display: none;
+}
+#card-two h1{
+    font-size: 1.5rem;
+    line-height: 35px;
+}
+#card-two p{
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/* Responsive Design for Mobile  */
+
+@media screen and (max-width: 576px) {
+    header{
+        padding: 0 20px;
+    }
+    .site-name{
+        font-size: 2.5rem;
+    }
+    nav, 
+    .buttons{
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+    }
+    nav .humburger-icon,
+    .btn-primary .hidden{
+        display: block;
+    }
+    nav ul, 
+    .btn-primary .visible{
+        display: none;
+    }
+    nav{
+        margin-bottom: 50px;
+    }
+    .banner-img {
+        margin-top: 50px;
+    }
+
+    .banner{
+        flex-direction: column;
+        padding: 0;
+    }  
+    .banner-content,
+    .banner-img{
+        width: 100%;
+    }
+    .banner-content h1{
+        font-size: 2.25rem;
+        line-height: 50px;
+        font-weight: 700;
+    }
+    .btn-primary{
+        padding: 13px 25px;        
+    }
+    #btn-secondary{
+        margin-left: 0;
+        padding: 13px 20px; 
+    }
+    .img-card{
+        padding: 15px 12px;
+        right: 0;
+        top: 9%;
+    }
+    .img-card h1{
+        font-size: 1.75rem;
+        line-height: 40px;
+    }
+    .img-card p,
+    #card-two p{
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+    #card-two{
+        left: 0;
+        top: 42%;
+        width: 180px;
+    }
+    #card-two h1{
+        font-size: 1.3rem;
+    }
+    #card-two .circle > i{
+        color: var(--general-font-color);
+        display: block;
+        position: relative;
+        top: 29%;
+        left: 37%;
+    }
+    
+}
