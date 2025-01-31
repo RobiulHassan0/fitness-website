@@ -220,17 +220,17 @@ nav ul span{
         font-weight: 700;
     }
     .btn-primary{
-        padding: 13px 25px;        
+        padding: 13px 20px;        
     }
     #btn-secondary{
         margin-left: 0;
         padding: 13px 20px; 
     }
     .img-card{
-        padding: 12px 13px;
+        padding: 12px 12px;
         right: 0;
         top: 9%;
-        width: 155px;
+        width: 140px;
     }
     .img-card h1{
         font-size: 1.75rem;
@@ -238,7 +238,7 @@ nav ul span{
     }
     .img-card p,
     #card-two p{
-        font-size: 0.63rem;
+        font-size: 0.56rem;
         font-weight: 400;
     }
     #card-two{
