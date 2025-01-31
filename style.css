@@ -121,6 +121,8 @@ nav ul span{
     top: 22%;
     right: 10%;
     padding: 18px 25px;
+    width: 210px;
+    box-sizing: border-box;
     display: inline-block;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.1);
@@ -131,6 +133,7 @@ nav ul span{
     color: var(--general-font-color);
     line-height: 50px;
     letter-spacing: 1px;
+
 }
 .img-card p{
     font-size: 13px;
@@ -224,9 +227,10 @@ nav ul span{
         padding: 13px 20px; 
     }
     .img-card{
-        padding: 15px 12px;
+        padding: 12px 13px;
         right: 0;
         top: 9%;
+        width: 155px;
     }
     .img-card h1{
         font-size: 1.75rem;
@@ -234,7 +238,7 @@ nav ul span{
     }
     .img-card p,
     #card-two p{
-        font-size: 0.7rem;
+        font-size: 0.63rem;
         font-weight: 400;
     }
     #card-two{
@@ -244,6 +248,7 @@ nav ul span{
     }
     #card-two h1{
         font-size: 1.3rem;
+        line-height: 40px;
     }
     #card-two .circle > i{
         color: var(--general-font-color);
