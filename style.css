@@ -240,7 +240,8 @@ main{
 /* Responsive Design for Mobile  */
 
 @media screen and (max-width: 576px) {
-    header{
+    header,
+    .habit-section{
         padding: 0 20px;
     }
     .site-name{
@@ -267,10 +268,14 @@ main{
         margin-top: 50px;
     }
 
-    .banner{
+    .banner,
+    .habit-images{
         flex-direction: column;
-        padding: 0;
     }  
+    .banner,
+    .habit-section > .description{
+        padding: 0;
+    }
     .banner-content,
     .banner-img{
         width: 100%;
@@ -319,5 +324,11 @@ main{
         top: 29%;
         left: 37%;
     }
-    
+    .section-title{
+        font-size: 2rem;
+    }
+    .habit-images{
+        gap: 0px;
+        margin-top: 0;
+    }
 }
