@@ -250,7 +250,7 @@ main{
 .long-card-img{
     flex: 1;
     overflow: hidden;
-    border-radius: 18px;
+    border-radius: 18px; 
 }
 
 .long-card-img img{
@@ -260,6 +260,54 @@ main{
     transform: translateX(-37%) translateY(31%) scale(2.6);
 }
  
+
+/* Exercise Section Styles */
+
+.exercise-section{
+    max-width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery, .gallery-2 {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 270px;
+}
+.gallery{grid-template-columns: 1fr 2fr 1.1fr;}
+.gallery-2{grid-template-columns: 1.3fr 1fr 1.2fr;}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+}
+
+#box-1{
+    background: linear-gradient(rgba(6, 255, 210, 0.5), rgba(6, 255, 210, 0.5)), url(images/exercise1.jpg) center/cover no-repeat;
+}
+#box-2{
+    background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), url(images/exercise2.png) center/cover no-repeat;
+}
+#box-3{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/exercise3.png) center/cover no-repeat;
+}
+#box-4{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/exercise4.png) center/cover no-repeat;
+}
+#box-5{
+    background: linear-gradient(rgba(66, 255, 0, 0.3), rgba(66, 255, 0, 0.3)), url(images/exercise5.jpg) center/cover no-repeat;
+}
+#box-6{
+    background: linear-gradient(rgba(0, 71, 255, 0.3), rgba(0, 71, 255, 0.3)), url(images/exercise6.jpg) center/cover no-repeat;
+}
+
+
+
+
+
 
 
 
@@ -288,7 +336,8 @@ main{
         display: block;
     }
     nav ul, 
-    .btn-primary .visible{
+    .btn-primary .visible,
+    #box-3, #box-6{
         display: none;
     }
     nav{
@@ -374,4 +423,28 @@ main{
         max-width: 80%;
         padding: 20px;
     }
+
+    /* Exercise Gallery Responsive  */
+    .gallery, .gallery-2{
+        max-width: 100%;
+        grid-template-rows: 180px;
+    }
+    .gallery{
+        grid-template-columns:  1.1fr 1fr;
+    }
+    .gallery-2{
+        grid-template-columns: 1fr 1.2fr;
+    }
+    #box-2{
+        background-position: 72% 21%;
+        background-size: 340%; 
+    }
+    #box-4{
+        background-size: 330%;
+        background-position: 35% 6%;
+    }
+    #box-5{
+        background-size: 200%;
+    }
+
 }
