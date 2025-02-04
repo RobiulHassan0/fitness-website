@@ -266,9 +266,17 @@ main{
 .exercise-section{
     max-width: 75%;
     width: 100%;
-
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+.exercise-content{
+    margin-left: 0;
+}
+.exercise-content .description{
+    margin-top: 20px;
 }
 .exercise-img-gallery {
     width: 100%;
@@ -287,12 +295,13 @@ main{
 .box {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    display: block; 
+    object-fit: cover;
+    color: var(--general-font-color); 
 }
 
 #box-1{
-    background: linear-gradient(rgba(6, 255, 210, 0.5), rgba(6, 255, 210, 0.5)), url(images/exercise1.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(6, 255, 210, 0.5), rgba(6, 255, 210, 0.5)), url(images/exercise1.jpg) center/cover;
+    color: #000;
 }
 #box-2{
     background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), url(images/exercise2.png) center/cover no-repeat;
@@ -310,10 +319,25 @@ main{
 #box-6{
     background: linear-gradient(rgba(0, 71, 255, 0.3), rgba(0, 71, 255, 0.3)), url(images/exercise6.jpg) center/cover no-repeat;
 }
-
-
-
-
+#box-1 p{
+    color: #000;
+}
+.exercise-img-gallery .box > p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    left: 10%;
+    top: 80%;
+}
+.exercise-img-gallery #box-2 > p{
+    top: 10%;
+    left: 6%;
+}
+.exercise-img-gallery #box-4 > p{
+    left: 55%;
+    top: 10%;
+}
 
 
 
@@ -348,7 +372,7 @@ main{
     nav{
         margin-bottom: 50px;
     }
-    .banner-img {
+    .banner-img{
         margin-top: 50px;
     }
 
@@ -430,11 +454,16 @@ main{
     }
 
     /* Exercise Gallery Responsive  */
-    /* .gallery, .gallery-2{
-        max-width: 100%;
-        grid-template-rows: 180px;
+    .exercise-section{
+        max-width: 90%;
+        margin-top: 60px;
+        gap: 20px;
     }
-    .gallery{
+    .gallery-1, .gallery-2{
+        grid-template-rows: 180px;
+
+    }
+    .gallery-1{
         grid-template-columns:  1.1fr 1fr;
     }
     .gallery-2{
@@ -450,6 +479,18 @@ main{
     }
     #box-5{
         background-size: 200%;
-    } */
-
+    }
+    .exercise-img-gallery .box > p, #box-1 p{
+        font-size: .9rem;
+        color: var(--general-font-color);
+    }
+    .exercise-img-gallery #box-4 > p{
+        top: 70%;
+        left: 8%;
+    }
+    .exercise-img-gallery #box-1>p, #box-5>p{
+        left: 0;
+        top: 70%;
+        padding-left: 10px;
+    }
 }
