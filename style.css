@@ -439,6 +439,77 @@ main{
     margin-top: 35px;
 }
 
+/* Team Section Styles */
+
+.team-section{
+    background: var(--main-background);
+    margin-top: 100px;
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.team-content{
+    text-align: center;
+    width: 50%;
+}
+.team-content .description{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.team-gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background: var(--card-bg-color);
+    padding: 20px;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+.team-member{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+}
+.team-member img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+.team-member::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.member-info{
+    position: absolute;
+    bottom: 5%;
+    left: 8%;
+    color: var(--general-font-color);
+    font-size: 1.5rem;
+    z-index: 2;
+}
+.member-info p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--description-font-color);
+}
+
+
+
+
+
+
 
 
 /* Responsive Design for Mobile  */
@@ -463,7 +534,9 @@ main{
     }
     nav ul, 
     .btn-primary .visible,
-    #box-3, #box-6{
+    #box-3, #box-6,
+    .team-gallery .team-member:nth-child(1),
+    .team-gallery .team-member:nth-child(4){
         display: none;
     }
     nav{
@@ -490,7 +563,9 @@ main{
     .banner-content, 
     .banner-img,
     .long-card-content .btn-primary,
-    .calculator-chart{
+    .calculator-chart,
+    .team-content,
+    .team-gallery{
         width: 100%;
     }
     .banner-content h1{
@@ -558,7 +633,8 @@ main{
 
     /* Exercise Gallery Responsive  */
     .exercise-section,
-    .bmi-calculator{
+    .bmi-calculator,
+    .team-section{
         max-width: 90%;
         gap: 20px;
     }
@@ -607,11 +683,13 @@ main{
     .calculator-chart table{
         margin-top: 30px;
     }
-    .bmi-content .section-title{
+    .bmi-content .section-title,
+    .team-content .section-title{
         font-size: 2rem;
     }
     .input-section,
-    .input-box{
+    .input-box, 
+    .team-gallery{
         margin-top: 20px;
     }
     .calculator-chart h2,
@@ -622,4 +700,15 @@ main{
     .input-section .btn-primary{
         padding: 16px 70px;
     }
+    .team-gallery{
+        grid-template-columns: 1fr;
+        
+    }
+    .team-member::after {
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .member-info h4 {
+        font-size: 1.25rem;
+    }
+    
 }
