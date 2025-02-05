@@ -697,6 +697,11 @@ main{
         font-size: 1.25rem;
         margin-bottom: 15px;
     }
+    .calculator-chart table thead th{
+        padding: 15px 13px;
+        font-weight: 400;
+        font-size: 1.10rem;
+    }
     .input-section .btn-primary{
         padding: 16px 70px;
     }
