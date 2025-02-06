@@ -553,6 +553,7 @@ footer{
     color: var(--general-font-color);
     margin: 0;
     margin-bottom: 40px;
+    font-weight: 600;
 }
 .first-box ul li, .second-box ul li{
     font-size: 1.5rem;
