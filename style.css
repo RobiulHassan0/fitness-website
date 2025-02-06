@@ -17,7 +17,6 @@
     --general-font-color: #fff;
     --button-color: #E6533C;
     --main-background: rgb(0, 0, 0);
-    /* --background: rgb(34, 34, 34); */
     --card-bg-color:rgb(34, 34, 34);
 }
 .site-name{
@@ -556,7 +555,7 @@ footer{
     font-weight: 600;
 }
 .first-box ul li, .second-box ul li{
-    font-size: 1.5rem;
+    font-size: 1.438rem;
     font-weight: 400;
     margin-bottom: 20px;
     padding: 0;
