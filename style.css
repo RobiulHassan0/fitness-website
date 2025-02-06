@@ -16,8 +16,8 @@
     --description-font-color: rgba(255, 255, 255, 0.5); 
     --general-font-color: #fff;
     --button-color: #E6533C;
-    --main-background: #000;
-    --background: #222222;
+    --main-background: rgb(0, 0, 0);
+    /* --background: rgb(34, 34, 34); */
     --card-bg-color:rgb(34, 34, 34);
 }
 .site-name{
@@ -60,7 +60,7 @@
 
 header{
     background: linear-gradient(0deg, #000, #ffffff01, #ffffff02, #111),
-    var(--background);
+    var(--card-bg-color);
     overflow: hidden;
 }
 nav .humburger-icon{
@@ -270,7 +270,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 .exercise-content{
     margin-left: 0;
@@ -349,7 +349,7 @@ main{
     margin-bottom: -10px;
 }
 .bmi-calulator-section{
-    background: rgb(34, 34, 34);
+    background: var(--card-bg-color);
 }
 .bmi-calculator{
     max-width: 75%;
@@ -506,6 +506,79 @@ main{
     color: var(--description-font-color);
 }
 
+/* Footer Section Styles */
+footer{
+    background: var(--card-bg-color);
+}
+.footer-content{
+    max-width: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+.left-side{
+    width: 50%;
+    padding-right: 170px;
+    box-sizing: border-box;
+    /* flex: 1; */
+}
+.right-side{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+.first-box, .second-box {
+    width: auto; 
+    padding: 0; 
+}
+.first-box{
+    flex: 1;
+}
+.left-side .site-name{
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+.left-side .description{
+    margin-top: 20px;
+    font-weight: 300;
+}
+.first-box h4, .second-box h4{
+    font-size: 2.25rem;
+    color: var(--general-font-color);
+    margin: 0;
+    margin-bottom: 40px;
+}
+.first-box ul li, .second-box ul li{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.first-box ul li a, .second-box ul li a{
+    color: var(--description-font-color);
+}
+.second-box ul li {
+    margin-right: 0; 
+}
+
+.footer-bottom{
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 1.25rem;
+    padding: 40px 0;
+    color: var(--description-font-color);
+}
+
+
 
 
 
@@ -551,7 +624,9 @@ main{
     .habit-images,
     .long-card,
     .bmi-calculator,
-    .bmi-calculator{
+    .bmi-calculator,
+    .footer-top,
+    .right-side{
         display: flex;
         flex-direction: column;
     }  
@@ -566,7 +641,13 @@ main{
     .long-card-content .btn-primary,
     .calculator-chart,
     .team-content,
-    .team-gallery{
+    .team-gallery,
+    .footer-top,
+    .left-side,
+    .right-side,
+    .first-box,
+    .second-box,
+    .footer-bottom{
         width: 100%;
     }
     .banner-content h1{
@@ -635,7 +716,8 @@ main{
     /* Exercise Gallery Responsive  */
     .exercise-section,
     .bmi-calculator,
-    .team-section{
+    .team-section,
+    .footer-content{
         max-width: 90%;
         gap: 20px;
     }
@@ -677,7 +759,7 @@ main{
         top: 70%;
         padding-left: 10px;
     }
-    .bmi-calculator{
+    .bmi-calculator, .footer-top{
         padding-top: 35px;
     }
     .bmi-content, 
@@ -690,7 +772,8 @@ main{
     }
     .input-section,
     .input-box, 
-    .team-gallery{
+    .team-gallery, 
+    .right-side{
         margin-top: 20px;
     }
     .calculator-chart h2,
@@ -713,8 +796,11 @@ main{
     .team-member::after {
         background: rgba(0, 0, 0, 0.4);
     }
-    .member-info h4 {
+    .member-info h4, 
+    .left-side .description {
         font-size: 1.25rem;
     }
-    
+    .left-side{
+        padding-right: 0;
+    }
 }
