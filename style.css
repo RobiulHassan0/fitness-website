@@ -176,7 +176,13 @@ nav ul span{
 #card-two p{
     font-size: 1rem;
 }
-
+.triangel-icon{
+    color: var(--general-font-color);
+    position: absolute;
+    top: 45%;
+    left: -18%;
+    font-size: 1.5rem;
+}
 /* Main Section  */
 
 main{
@@ -607,6 +613,7 @@ footer{
         display: block;
     }
     nav ul, 
+    .triangel-icon,
     .btn-primary .visible,
     #box-3, #box-6,
     .team-gallery .team-member:nth-child(1),
