@@ -118,6 +118,12 @@ nav ul span{
     color: var(--general-font-color);
     line-height: 90px;  
 }
+.special-font{
+    font-family: 'Miama', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--general-font-color);                                           
+}
 .banner-img {
     width: 30%;
     position: relative;
@@ -661,6 +667,9 @@ footer{
         font-size: 2.25rem;
         line-height: 50px;
         font-weight: 700;
+    }
+    .special-font{
+        font-size: 2.25rem;
     }
     .description{
         font-weight: 300;
